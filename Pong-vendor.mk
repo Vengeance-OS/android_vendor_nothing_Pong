@@ -1907,3 +1907,11 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.radio.ims \
     vendor.qti.hardware.servicetracker@1.2-service \
     vendor.qti.hardware.vpp@2.0-service
+
+PRODUCT_PACKAGES += \
+    libimscamera_jni_libimscamera_jni_symlink64 \
+    libimsmedia_jni_libimsmedia_jni_symlink64 \
+    libwfdnative_libwfdnative_symlink64 \
+    libEGL_adreno_libEGL_adreno_symlink64 \
+    libGLESv2_adreno_libGLESv2_adreno_symlink64 \
+    libq3dtools_adreno_libq3dtools_adreno_symlink64
