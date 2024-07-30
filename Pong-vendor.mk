@@ -9,6 +9,8 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Pong/proprietary/product/etc/permissions/UimGba.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGba.xml \
     vendor/nothing/Pong/proprietary/product/etc/permissions/UimGbaManager.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGbaManager.xml \
     vendor/nothing/Pong/proprietary/product/etc/permissions/UimService.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimService.xml \
+    vendor/nothing/Pong/proprietary/system/etc/permissions/com.dirac.acs.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.dirac.acs.xml \
+    vendor/nothing/Pong/proprietary/system/etc/sysconfig/preinstalled-packages-dirac.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/preinstalled-packages-dirac.xml \
     vendor/nothing/Pong/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     vendor/nothing/Pong/proprietary/system_ext/bin/dpmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dpmd \
     vendor/nothing/Pong/proprietary/system_ext/bin/qccsyshal@1.2-service:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qccsyshal@1.2-service \
@@ -252,6 +254,8 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Pong/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
     vendor/nothing/Pong/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
     vendor/nothing/Pong/proprietary/vendor/etc/default-permissions/com.qualcomm.qti.cne.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default-permissions/com.qualcomm.qti.cne.xml \
+    vendor/nothing/Pong/proprietary/vendor/etc/dirac/dirac_resource.dar:$(TARGET_COPY_OUT_VENDOR)/etc/dirac/dirac_resource.dar \
+    vendor/nothing/Pong/proprietary/vendor/etc/dirac/interface.json:$(TARGET_COPY_OUT_VENDOR)/etc/dirac/interface.json \
     vendor/nothing/Pong/proprietary/vendor/etc/display/DPU660.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU660.xml \
     vendor/nothing/Pong/proprietary/vendor/etc/display/DPU670.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU670.xml \
     vendor/nothing/Pong/proprietary/vendor/etc/display/DPU720.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU720.xml \
@@ -1221,6 +1225,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Pong/proprietary/vendor/lib64/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdiag.so \
     vendor/nothing/Pong/proprietary/vendor/lib64/libdiagjni.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdiagjni.so \
     vendor/nothing/Pong/proprietary/vendor/lib64/libdigital-dimming.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdigital-dimming.so \
+    vendor/nothing/Pong/proprietary/vendor/lib64/libdirac.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdirac.so \
     vendor/nothing/Pong/proprietary/vendor/lib64/libdisp-aba.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisp-aba.so \
     vendor/nothing/Pong/proprietary/vendor/lib64/libdisplayqos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayqos.so \
     vendor/nothing/Pong/proprietary/vendor/lib64/libdisplayskuutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayskuutils.so \
@@ -1595,6 +1600,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Pong/proprietary/vendor/lib64/qtiwakelock.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qtiwakelock.so \
     vendor/nothing/Pong/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \
     vendor/nothing/Pong/proprietary/vendor/lib64/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libasphere.so \
+    vendor/nothing/Pong/proprietary/vendor/lib64/soundfx/libdiraceffect-afm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libdiraceffect-afm.so \
     vendor/nothing/Pong/proprietary/vendor/lib64/soundfx/libshoebox.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libshoebox.so \
     vendor/nothing/Pong/proprietary/vendor/lib64/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.0.so \
     vendor/nothing/Pong/proprietary/vendor/lib64/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.1.so \
@@ -1766,6 +1772,8 @@ PRODUCT_PACKAGES += \
     libthermalclient \
     libvmmem \
     vendor.qti.hardware.AGMIPC@1.0-impl \
+    DiracAudioControlService_DMP \
+    NothingDiracService_DMP \
     CACertService \
     CneApp \
     IWlanService \
