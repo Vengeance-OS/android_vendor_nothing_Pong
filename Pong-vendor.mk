@@ -112,7 +112,6 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Pong/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.display.color@1.0-service \
     vendor/nothing/Pong/proprietary/vendor/bin/hw/vendor.qti.camera.provider@2.7-service_64:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.camera.provider@2.7-service_64 \
     vendor/nothing/Pong/proprietary/vendor/bin/hw/vendor.qti.esepowermanager@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.esepowermanager@1.1-service \
-    vendor/nothing/Pong/proprietary/vendor/bin/hw/vendor.qti.hardware.AGMIPC@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.AGMIPC@1.0-service \
     vendor/nothing/Pong/proprietary/vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.alarm@1.0-service \
     vendor/nothing/Pong/proprietary/vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service \
     vendor/nothing/Pong/proprietary/vendor/bin/hw/vendor.qti.hardware.eid@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.eid@1.0-service \
@@ -310,7 +309,6 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Pong/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
     vendor/nothing/Pong/proprietary/vendor/etc/init/vendor.dpmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dpmd.rc \
     vendor/nothing/Pong/proprietary/vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-guestos-service.rc \
-    vendor/nothing/Pong/proprietary/vendor/etc/init/vendor.qti.audio-adsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.audio-adsprpc-service.rc \
     vendor/nothing/Pong/proprietary/vendor/etc/init/vendor.qti.camera.provider@2.7-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.camera.provider@2.7-service_64.rc \
     vendor/nothing/Pong/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
     vendor/nothing/Pong/proprietary/vendor/etc/init/vendor.qti.diag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.diag.rc \
@@ -570,7 +568,6 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Pong/proprietary/vendor/etc/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     vendor/nothing/Pong/proprietary/vendor/etc/wifi/qca6490/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/qca6490/WCNSS_qcom_cfg.ini \
     vendor/nothing/Pong/proprietary/vendor/etc/wifi/vendor_cmd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/vendor_cmd.xml \
-    vendor/nothing/Pong/proprietary/vendor/etc/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
     vendor/nothing/Pong/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     vendor/nothing/Pong/proprietary/vendor/etc/xtra_root_cert.pem:$(TARGET_COPY_OUT_VENDOR)/etc/xtra_root_cert.pem \
     vendor/nothing/Pong/proprietary/vendor/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf \
@@ -800,7 +797,6 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Pong/proprietary/vendor/lib/rfsa/adsp/libvpp_vqa_networks.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libvpp_vqa_networks.so \
     vendor/nothing/Pong/proprietary/vendor/lib/rfsa/adsp/libvpt_action_recognition.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libvpt_action_recognition.so \
     vendor/nothing/Pong/proprietary/vendor/lib64/btaudio_offload_if.so:$(TARGET_COPY_OUT_VENDOR)/lib64/btaudio_offload_if.so \
-    vendor/nothing/Pong/proprietary/vendor/lib64/camera.device@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@1.0-impl.so \
     vendor/nothing/Pong/proprietary/vendor/lib64/camera/arcsoft_calibration_uw.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/arcsoft_calibration_uw.bin \
     vendor/nothing/Pong/proprietary/vendor/lib64/camera/arcsoft_calibration_wt.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/arcsoft_calibration_wt.bin \
     vendor/nothing/Pong/proprietary/vendor/lib64/camera/arcsoft_dc_calibration_t.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/arcsoft_dc_calibration_t.bin \
@@ -1038,11 +1034,9 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Pong/proprietary/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
     vendor/nothing/Pong/proprietary/vendor/lib64/hw/android.hardware.gnss-aidl-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss-aidl-impl-qti.so \
     vendor/nothing/Pong/proprietary/vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss@2.1-impl-qti.so \
-    vendor/nothing/Pong/proprietary/vendor/lib64/hw/audio.primary.taro.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.taro.so \
     vendor/nothing/Pong/proprietary/vendor/lib64/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/camera.qcom.so \
     vendor/nothing/Pong/proprietary/vendor/lib64/hw/com.dsi.ant@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.dsi.ant@1.0-impl.so \
     vendor/nothing/Pong/proprietary/vendor/lib64/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qti.chi.override.so \
-    vendor/nothing/Pong/proprietary/vendor/lib64/hw/fingerprint.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.default.so \
     vendor/nothing/Pong/proprietary/vendor/lib64/hw/sound_trigger.primary.taro.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sound_trigger.primary.taro.so \
     vendor/nothing/Pong/proprietary/vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so \
     vendor/nothing/Pong/proprietary/vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so \
@@ -1242,7 +1236,6 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Pong/proprietary/vendor/lib64/libface3d_dev.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libface3d_dev.so \
     vendor/nothing/Pong/proprietary/vendor/lib64/libfastcrc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcrc.so \
     vendor/nothing/Pong/proprietary/vendor/lib64/libfastcvdsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvdsp_stub.so \
-    vendor/nothing/Pong/proprietary/vendor/lib64/libfmpal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfmpal.so \
     vendor/nothing/Pong/proprietary/vendor/lib64/libgame_enhance.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgame_enhance.so \
     vendor/nothing/Pong/proprietary/vendor/lib64/libgamepoweroptfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgamepoweroptfeature.so \
     vendor/nothing/Pong/proprietary/vendor/lib64/libgarden.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgarden.so \
@@ -1368,7 +1361,6 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Pong/proprietary/vendor/lib64/libperfgluelayer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfgluelayer.so \
     vendor/nothing/Pong/proprietary/vendor/lib64/libperfioctl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfioctl.so \
     vendor/nothing/Pong/proprietary/vendor/lib64/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperipheral_client.so \
-    vendor/nothing/Pong/proprietary/vendor/lib64/libplatformconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libplatformconfig.so \
     vendor/nothing/Pong/proprietary/vendor/lib64/libpn560_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpn560_fw.so \
     vendor/nothing/Pong/proprietary/vendor/lib64/libportrait_repair_ppl3_ocl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libportrait_repair_ppl3_ocl.so \
     vendor/nothing/Pong/proprietary/vendor/lib64/libpowercallback.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpowercallback.so \
@@ -1616,7 +1608,6 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Pong/proprietary/vendor/lib64/vendor.qti.esepowermanager@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.esepowermanager@1.1.so \
     vendor/nothing/Pong/proprietary/vendor/lib64/vendor.qti.gnss-V3-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss-V3-ndk_platform.so \
     vendor/nothing/Pong/proprietary/vendor/lib64/vendor.qti.gnss-service.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss-service.so \
-    vendor/nothing/Pong/proprietary/vendor/lib64/vendor.qti.hardware.AGMIPC@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.AGMIPC@1.0.so \
     vendor/nothing/Pong/proprietary/vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.ListenSoundModel@1.0-impl.so \
     vendor/nothing/Pong/proprietary/vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.ListenSoundModel@1.0.so \
     vendor/nothing/Pong/proprietary/vendor/lib64/vendor.qti.hardware.alarm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.alarm@1.0.so \
@@ -1659,8 +1650,6 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Pong/proprietary/vendor/lib64/vendor.qti.hardware.limits@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.limits@1.0.so \
     vendor/nothing/Pong/proprietary/vendor/lib64/vendor.qti.hardware.limits@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.limits@1.1.so \
     vendor/nothing/Pong/proprietary/vendor/lib64/vendor.qti.hardware.mwqemadapter@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.mwqemadapter@1.0.so \
-    vendor/nothing/Pong/proprietary/vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.pal@1.0-impl.so \
-    vendor/nothing/Pong/proprietary/vendor/lib64/vendor.qti.hardware.pal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.pal@1.0.so \
     vendor/nothing/Pong/proprietary/vendor/lib64/vendor.qti.hardware.power.powermodule@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.power.powermodule@1.0.so \
     vendor/nothing/Pong/proprietary/vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qccsyshal@1.0.so \
     vendor/nothing/Pong/proprietary/vendor/lib64/vendor.qti.hardware.qccsyshal@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qccsyshal@1.1.so \
@@ -1749,6 +1738,8 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Pong/proprietary/vendor/lib64/vendor.qti.qspmhal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.qspmhal@1.0.so
 
 PRODUCT_PACKAGES += \
+    audio.primary.taro \
+    fingerprint.default \
     libagm \
     libar-gsl \
     libar-pal \
@@ -1802,6 +1793,8 @@ PRODUCT_PACKAGES += \
     c2_manifest_vendor_audio \
     dataconnection-saidl \
     manifest_android.hardware.drm@1.4-service.widevine \
+    manifest_non_qmaa \
+    manifest_non_qmaa_extn \
     qtiradio-saidl \
     vendor.qti.diag.hal.service \
     vendor.qti.gnss-service \
